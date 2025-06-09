@@ -13,8 +13,13 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      fontFamily: {
+        primary: ["var(--font-manrope)"],
+        secondary: ["var(--font-roboto)"],
+      }
     },
   },
   plugins: [],
 };
+
 export default config;

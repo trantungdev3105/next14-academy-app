@@ -16,7 +16,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${manrope.variable} ${roboto.variable}`}>{children}</body>
+      <body className={`${manrope.variable} ${roboto.variable} font-primary`}>{children}</body>
     </html>
   );
 }
