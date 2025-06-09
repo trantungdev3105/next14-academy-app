@@ -1,10 +1,8 @@
 /** @format */
 
 import type { Metadata } from "next";
-import { Manrope } from "next/font/google";
 import "./globals.css";
-
-const manrope = Manrope({ subsets: ["latin"] });
+import { manrope, roboto } from "@/components/font";
 
 export const metadata: Metadata = {
   title: "Academy App",
@@ -18,7 +16,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={manrope.className}>{children}</body>
+      <body className={`${manrope.variable} ${roboto.variable}`}>{children}</body>
     </html>
   );
 }
