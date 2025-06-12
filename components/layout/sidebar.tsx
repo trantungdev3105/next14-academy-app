@@ -1,4 +1,5 @@
 import { menuItems } from '@/constants'
+import Link from 'next/link'
 import React from 'react'
 
 const SideBar = () => {
@@ -32,12 +33,12 @@ const MenuItem = ({
 }) => {
   return (
     <li>
-      <a
+      <Link
         href={url}
         className="hover:text-primary hover:bg-primary flex items-center gap-3 rounded-md p-3 transition-all hover:bg-opacity-10"
       >
         {icon} {title}
-      </a>
+      </Link>
     </li>
   )
 }
