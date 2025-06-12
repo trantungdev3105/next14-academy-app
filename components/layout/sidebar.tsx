@@ -1,3 +1,4 @@
+import { menuItems } from '@/constants'
 import React from 'react'
 
 const SideBar = () => {
@@ -6,9 +7,15 @@ const SideBar = () => {
       <a href="/" className="mb-5 inline-block text-3xl font-semibold">
         Academy
       </a>
-      <ul className="">
-        <MenuItem url="/" title="Dashboard" />
-        <MenuItem url="/admin" title="Admin" />
+      <ul className="flex flex-col gap-2">
+        {menuItems.map((item, index) => (
+          <MenuItem
+            key={index}
+            url={item.url}
+            title={item.title}
+            icon={item.icon}
+          />
+        ))}
       </ul>
     </aside>
   )
@@ -17,13 +24,20 @@ const SideBar = () => {
 const MenuItem = ({
   url = '/',
   title = '',
+  icon,
 }: {
   url: string
   title: string
+  icon?: React.ReactNode
 }) => {
   return (
-    <li className="flex items-center rounded-md p-3">
-      <a href={url}>{title}</a>
+    <li>
+      <a
+        href={url}
+        className="hover:text-primary hover:bg-primary flex items-center gap-3 rounded-md p-3 transition-all hover:bg-opacity-10"
+      >
+        {icon} {title}
+      </a>
     </li>
   )
 }
