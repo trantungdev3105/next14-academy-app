@@ -13,7 +13,7 @@ export const menuItems: {
     icon: <IconDashboard className="size-5" />,
   },
   {
-    url: '/admin',
+    url: '/explore',
     title: 'Admin',
     icon: <IconBoth className="size-5" />,
   },
