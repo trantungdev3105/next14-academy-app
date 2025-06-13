@@ -1,12 +1,7 @@
-import IconBoth from '@/components/icons/IconBoth'
-import IconDashboard from '@/components/icons/IconDashboard'
-import React from 'react'
+import { IconBoth, IconDashboard } from '@/components/icons'
+import { TMenuItem } from '@/types'
 
-export const menuItems: {
-  url: string
-  title: string
-  icon?: React.ReactNode
-}[] = [
+export const menuItems: TMenuItem[] = [
   {
     url: '/',
     title: 'Dashboard',
