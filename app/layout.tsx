@@ -4,6 +4,7 @@ import type { Metadata } from 'next'
 import './globals.css'
 import { manrope } from '@/utils'
 import SideBar from '@/components/layout/sidebar'
+import { ClerkProvider } from '@clerk/nextjs'
 
 export const metadata: Metadata = {
   title: 'Academy App',
@@ -16,13 +17,10 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en">
-      <body className={`${manrope.className} font-primary`}>
-        <div className="wrapper grid h-screen grid-cols-[300px,minmax(0,1fr)]">
-          <SideBar />
-          <main>{children}</main>
-        </div>
-      </body>
-    </html>
+    <ClerkProvider>
+      <html lang="en">
+        <body className={`${manrope.className} font-primary`}>{children}</body>
+      </html>
+    </ClerkProvider>
   )
 }
