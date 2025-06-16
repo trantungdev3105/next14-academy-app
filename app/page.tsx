@@ -1,6 +1,10 @@
-/** @format */
+'use server'
 
-export default function Home() {
+import { connectToMongoDB } from '@/libs/mongoose'
+
+export default async function Home() {
+  const connect = await connectToMongoDB()
+
   return (
     <div>
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum eos, veniam
