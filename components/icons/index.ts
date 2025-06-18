@@ -1,2 +1,5 @@
-export { default as IconBoth } from './IconBoth'
-export { default as IconDashboard } from './IconDashboard'
+export { default as IconStudy } from './IconStudy'
+export { default as IconExplorer } from './IconExplorer'
+export { default as IconCourse } from './IconCourse'
+export { default as IconMember } from './IconMember'
+export { default as IconOrder } from './IconOrder'

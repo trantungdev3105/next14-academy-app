@@ -1,6 +1,6 @@
 import React, { ComponentProps } from 'react'
 
-const IconDashboard = (props: ComponentProps<'svg'>) => {
+const IconExplorer = (props: ComponentProps<'svg'>) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -19,4 +19,4 @@ const IconDashboard = (props: ComponentProps<'svg'>) => {
   )
 }
 
-export default IconDashboard
+export default IconExplorer
