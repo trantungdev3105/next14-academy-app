@@ -1,10 +1,7 @@
-/** @format */
-
+import { manrope } from '@/utils'
+import { ClerkProvider } from '@clerk/nextjs'
 import type { Metadata } from 'next'
 import './globals.css'
-import { manrope } from '@/utils'
-import SideBar from '@/components/layout/sidebar'
-import { ClerkProvider } from '@clerk/nextjs'
 
 export const metadata: Metadata = {
   title: 'Academy App',

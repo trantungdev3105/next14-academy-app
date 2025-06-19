@@ -4,8 +4,8 @@ import ActiveLink from '../common/active-link'
 
 const SideBar = () => {
   return (
-    <aside className="p-5 border-r border-r-gray">
-      <a href="/" className="inline-block mb-5 text-3xl font-semibold">
+    <aside className="border-r-gray border-r bg-white p-5">
+      <a href="/" className="mb-5 inline-block text-3xl font-semibold">
         Academy
       </a>
       <ul className="flex flex-col gap-2">
