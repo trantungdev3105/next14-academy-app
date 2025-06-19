@@ -47,3 +47,8 @@ export default function ShopPage({ params }: { params: { slug?: string[] } }) {
 ```
 
 ---
+
+# Next/Image
+
+- Image yêu cầu 3 thuộc tính bắt buộc là src, width, height
+- Nếu sử dụng thuộc tính `fill` thì không cần width và height vẫn hoạt động. Tuy nhiên thẻ img sẽ là absolute, do đó cần 1 thẻ bọc ngoài có thuộc tính position: relative hoặc absolute tùy thuộc vào mục đích.
